@@ -1,0 +1,283 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+ul.header-menu {
+    display: flex;
+}
+
+.header-logo {
+    text-align: center;
+}
+
+.header-logo {
+    width: 35%;
+    margin: auto;
+}
+
+.header-menu {
+    text-align: center;
+    margin: auto;
+}
+
+.header {
+    background: -webkit-linear-gradient(292deg, rgba(83, 199, 253, 0.99) 16%, #64c4f8 83%);
+}
+
+.header-title {
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    width: 58%;
+    margin: auto;
+    padding: 35px 0;
+}
+
+.header-title b {
+    font-weight: 900;
+}
+
+div.container {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.blog-img {
+    width: 26%;
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-img li::before {
+    content: '\2192';
+    color: red;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.div-img ul {
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.box {
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow: 6px 6px 30px lightblue;
+    margin-bottom: 38px;
+}
+
+.nailner-images img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.list-treatments li::before {
+    content: '\2192';
+    color: red;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.order {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.order-btn {
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.order-btn {
+    background: linear-gradient(0deg,
+            rgb(57, 171, 181) 0%,
+            rgb(79, 226, 239) 100%);
+}
+
+.order-btn:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+        -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.quotes {
+    margin-top: 38px;
+    box-shadow: 0 0 62px 0 rgba(0, 0, 0, 0.09);
+    padding: 23px 46px 23px 46px;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.71;
+    position: relative;
+    border-left: 2px solid #64c4f8;
+}
+
+.quotes p {
+    margin-top: 0;
+}
+
+/* .quotes::before {
+    position: absolute;
+    content: '';
+    width: 58px;
+    height: 49px;
+    top: 40px;
+    left: 30px;
+    background: url(../images/quotes.png) center/contain;
+} */
+
+div.comments {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    margin: 0px auto;
+}
+
+div.comm-text {
+    margin-left: 20px;
+}
+
+div.comm-text img {
+    width: 50%;
+}
+
+p.name {
+    font-weight: 800;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    margin: 20px;
+}
+
+footer ul li a {
+    color: black;
+}
+
+p.disclaimer {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+    .blog-img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    div.container {
+        width: 70%;
+    }
+
+    .header-title {
+        font-size: 32px;
+    }
+
+    .div-img ul li {
+        margin: 4px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.container {
+        width: 90%;
+    }
+
+    .blog-img {
+        width: 34%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    div.container {
+        display: block;
+    }
+
+    .container h1 {
+        font-size: 18px;
+    }
+
+    .header-title {
+        font-size: 21px;
+        padding: 7px 0;
+    }
+
+    .div-img {
+        display: block;
+    }
+
+    .blog-img {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .nailner-images img {
+        width: 100%;
+    }
+
+    .box {
+        font-size: larger;
+    }
+
+    .comm-text img {
+        width: 88% !important;
+    }
+
+    .order-btn {
+        padding: 10px 2px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    div.container {
+        width: 95%;
+    }
+
+    .order-btn {
+        padding: 10px 0px;
+    }
+
+    .comm-text img {
+        width: 88% !important;
+    }
+}
